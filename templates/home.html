@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1></h1>
+    <h1>Добрый день, {{ user.first_name }} {{ user.last_mane }} </h1>
+    {% if user.is_stuff %}
+        <h1>Ваш отдел {{ user.departament }}</h1>
+    {% endif %}
+{% endblock %}
